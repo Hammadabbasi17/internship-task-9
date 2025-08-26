@@ -100,3 +100,9 @@
     background-color: var(--third-color);
     /* blue-700 */
 }
+@media (max-width:768px) {
+    .tick h3{
+        font-size: 17px;
+    }
+    
+}
