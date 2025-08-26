@@ -1,0 +1,102 @@
+:root{
+    --primary-color:#5856D6;
+    --secondary-color:#093E62;
+        --third-color:#6866da;
+    --container-color:#F2FAFF;
+    --clr-background:#fff;
+    --text-clr:black;
+    --small-text-color:#646464;
+    --heading-font: "Teko", sans-serif;
+    --text-font:"Rajdhani", sans-serif;
+
+}
+
+.dark-theme{
+    --clr-background:#181a1e;
+     --text-clr:white;
+     --small-text-color:#F2FAFF;
+       --container-color:black;
+
+}
+.Pricing-section{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+    gap: 25px;
+    padding: 20px;
+}
+.pricebox{
+    background-color: var(--container-color);
+    height: 520px;
+    border-radius: 20px;
+    padding: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    
+}
+.pricebox:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.price-heading{
+    padding-left: 30px;
+   
+}
+.price-heading h2{
+    padding-bottom: 10px;
+    font-family: var(--heading-font);
+    font-size: 21px;
+    color: var(--text-clr);
+
+}
+.price-heading h1{
+    padding-top: 20px;
+    color: var(--text-clr);
+  
+   
+    
+}
+.price-heading h3{
+
+    color: var(--small-text-color);
+  
+   
+    
+}
+.tick i{
+    color: var(--primary-color);
+
+}
+.tick h3{
+    color: var(--small-text-color);
+}
+.price-button {
+    
+     width: 250px;
+     height: 50px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    /* background-color: #2563eb; */
+    /* blue-600 */
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:all 0.3s ease;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: var(--text-font);
+}
+
+.price-button:hover {
+    background-color: var(--third-color);
+    /* blue-700 */
+}

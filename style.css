@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Teko:wght@300..700&display=swap');
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --primary-color:#5856D6;
+    --secondary-color:#093E62;
+        --third-color:#6866da;
+    --container-color:#F2FAFF;
+    --clr-background:#fff;
+    --text-clr:black;
+    --small-text-color:#646464;
+    --heading-font: "Teko", sans-serif;
+    --text-font:"Rajdhani", sans-serif;
+
+}
+
+.dark-theme{
+    --clr-background:#181a1e;
+     --text-clr:white;
+     --small-text-color:#F2FAFF;
+
+}
+body{
+    scroll-behavior: smooth;
+    background-color: var(--clr-background);
+   
+
+}

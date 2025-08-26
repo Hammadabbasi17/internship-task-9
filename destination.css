@@ -1,0 +1,143 @@
+:root{
+    --primary-color:#5856D6;
+    --secondary-color:#093E62;
+        --third-color:#6866da;
+    --container-color:#F2FAFF;
+    --clr-background:#fff;
+    --text-clr:black;
+    --small-text-color:#646464;
+    --heading-font: "Teko", sans-serif;
+    --text-font:"Rajdhani", sans-serif;
+
+}
+
+.dark-theme{
+    --clr-background:#181a1e;
+     --text-clr:white;
+     --small-text-color:#F2FAFF;
+       --container-color:black;
+
+}
+.destination-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+
+    margin-top: 90px;
+}
+.destination-heading h2{
+    font-size: 25px;
+    font-style: italic;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.destination-heading h1{
+    font-size: 66px;
+    font-family: var(--heading-font);
+    font-weight: 800;
+    color: var(--text-clr);
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(360px,auto));
+    gap: 30px;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+
+}
+.box1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom:60px;
+     
+    background-color: var(--container-color);
+    text-align: center;
+    height: 470px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+
+}
+.box1:hover{
+       transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.box1 h2{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--text-clr);
+}
+.box1 h4{
+    color: var(--small-text-color);
+
+}
+.box1 h3{
+    color: var(--primary-color);
+    cursor: pointer;
+
+}
+.services-text h2{
+    padding-bottom: 10px;
+   
+}
+.services-text h3{
+    padding-top: 10px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+    .services-container{
+        grid-template-columns: repeat(2,auto);
+    }
+    
+}
+@media (max-width:768px) {
+    .services-container{
+        grid-template-columns: repeat(1,auto);
+        align-items: center;
+        justify-content: center;
+    }
+    .destination-heading h1{
+    font-size: 40px;
+ 
+    
+}
+.destination-heading h2{
+    font-size: 20px;
+
+}
+}
